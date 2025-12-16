@@ -25,7 +25,7 @@ if (varanda === "sim") {
 document.getElementById("resultado").innerText = "Orçamento aproximado: R$" + total.toFixed(2);
 }
 
-function enviarWhatsApp() {
+/*function enviarWhatsApp() {
     var metros = document.getElementById("metros").value;
     var varanda = document.getElementById("varanda").value;
     var tipo = document.getElementById("tipo").value;
@@ -58,3 +58,4 @@ function enviarWhatsApp() {
 
     window.open(link, "_blank");
 }
+*/
