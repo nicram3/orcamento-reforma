@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Orçamento de reforma</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Simulador</h1>
+
+        <div class="container">
+            <label>
+                Metros quadrados do imóvel:
+                <input type="number" id="metros" />
+            </label>
+
+            <label>
+                Casa ou apartamento?
+                <select id="casa">
+                    <option value="casa">Casa</option>
+                    <option value="ap">Apartamento</option>
+                </select>
+            </label>
+
+            <label>
+                Possui varanda?
+                <select id="varanda">
+                    <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
+                    <option value="na">Não se aplica</option>
+                </select>
+            </label>
+
+            <label>
+                Tipo de reforma
+                <select id="reforma">
+                    <option value="simples">Simples</option>
+                    <option value="completa">Completa</option>
+                </select>
+            </label>
+
+            <label>
+                WhatsApp do contratado:
+                <input type="text" id="whatsapp" placeholder="5511999999999">
+            </label>
+
+
+            <button onclick="calcular()">Calcular orçamento</button>
+            <button onclick="enviarWhatsApp()">Compartilhar no WhatsApp</button>
+
+
+            <p id="resultado"></p>
+        </div>
+        <div class="aviso">
+            <label>*Este valor é apenas uma estimativa inicial e deve variar após análise do imóvel</label>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
